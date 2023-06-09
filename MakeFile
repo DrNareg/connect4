@@ -1,0 +1,6 @@
+connect4: connect4.cpp Makefile
+	g++ connect4.cpp -o connect4 `wx-config --libs --cppflags`
+
+.PHONY: clean
+clean:
+	rm -f connect4
